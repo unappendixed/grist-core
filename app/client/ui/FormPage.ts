@@ -173,7 +173,7 @@ const cssForm = styled('div', `
   overflow: hidden;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  // background-color: white;
   border-radius: 3px;
 `);
 

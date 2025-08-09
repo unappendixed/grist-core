@@ -116,6 +116,10 @@ export function attachDefaultLightTheme() {
   attachCssThemeVars(DEFAULT_LIGHT_THEME);
 }
 
+export function attachDefaultDarkTheme() {
+  attachCssThemeVars(DEFAULT_DARK_THEME);
+}
+
 /**
  * Returns the `Theme` from the given `themePrefs`.
  *
