@@ -137,7 +137,7 @@ export const error = styled('div', `
 
 export const textInput = styled('input', `
   color: ${colors.dark};
-  background-color: ${colors.light};
+  // background-color: ${colors.light};
   height: 29px;
   width: 100%;
   font-size: 13px;
