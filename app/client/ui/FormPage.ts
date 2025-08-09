@@ -3,7 +3,7 @@ import {handleSubmit, TypedFormData} from 'app/client/lib/formUtils';
 import {makeT} from 'app/client/lib/localization';
 import {sanitizeHttpUrl} from 'app/client/lib/sanitizeUrl';
 import {FormModel, FormModelImpl} from 'app/client/models/FormModel';
-import {buildFormFooter} from 'app/client/ui/FormContainer';
+// import {buildFormFooter} from 'app/client/ui/FormContainer';
 import {FormErrorPage} from 'app/client/ui/FormErrorPage';
 import {FormSuccessPage} from 'app/client/ui/FormSuccessPage';
 import {colors} from 'app/client/ui2018/cssVars';
@@ -18,6 +18,7 @@ const t = makeT('FormPage');
 const testId = makeTestId('test-form-');
 
 export class FormPage extends Disposable {
+
   private readonly _model: FormModel = new FormModelImpl();
   private readonly _error = Observable.create<string|null>(this, null);
 
@@ -86,9 +87,9 @@ export class FormPage extends Disposable {
             ),
           ),
         ),
-        cssFormFooter(
-          buildFormFooter(),
-        ),
+        // cssFormFooter(
+        //   buildFormFooter(),
+        // ),
         testId('page'),
       );
     });
@@ -172,7 +173,7 @@ const cssForm = styled('div', `
   overflow: hidden;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: black;
   border-radius: 3px;
 `);
 
@@ -226,7 +227,7 @@ const cssFormContent = styled('form', `
   }
 `);
 
-const cssFormFooter = styled('footer', `
-  padding: 8px 16px;
-  width: 100%;
-`);
+// const cssFormFooter = styled('footer', `
+//   padding: 8px 16px;
+//   width: 100%;
+// `);
