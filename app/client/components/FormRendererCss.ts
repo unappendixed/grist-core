@@ -323,7 +323,7 @@ export const select = styled('select', `
   border: 1px solid ${colors.darkGrey};
   font-size: 13px;
   outline: none;
-  background: white;
+  /* background: white; */
   line-height: inherit;
   height: 29px;
   flex: auto;
@@ -347,7 +347,7 @@ export const searchSelect = styled('div', `
   border-radius: 3px;
   outline: 1px solid ${colors.darkGrey};
   font-size: 13px;
-  background: white;
+  /* background: white; */
   line-height: inherit;
   height: 29px;
   flex: auto;
@@ -359,6 +359,7 @@ export const searchSelect = styled('div', `
 `);
 
 export const searchSelectIcon = styled(icon, `
+  display: none !important;
   flex-shrink: 0;
 `);
 
